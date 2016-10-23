@@ -1,0 +1,39 @@
+import datetime
+from django.utils import timezone
+from django.db import models
+
+
+class Empresas (models.Model):
+	"""Modelo para representar una empresa.
+		
+		Este modelo esta formado con el nombre de la empresa y su respectivo correo
+	
+	"""
+	nombre = models.CharField (max_length=200)
+	correo = models.CharField (max_length=200)
+	
+	
+	def __unicode__(self):
+		return self.nombre
+		
+	def getEmpresa(self):
+		return self
+		
+	def deleteEmpresa(self):
+		self.delete()
+	
+
+
+class Valoracion(models.Model):
+	"""Modelo para representar una valoracion acerca de una empresa.
+	
+		Este modelo esta formado por un comentario y una puntuacion
+		La clave externa es la empresa con la que esta relaccionada
+	"""
+	empresa = models.ForeignKey (Empresas)
+	comentario = models.CharField (max_length=200)
+	puntuacion = models.IntegerField (default=0)
+	
+
+	def __unicode__(self):
+		return self.comentario

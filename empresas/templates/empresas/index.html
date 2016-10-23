@@ -1,0 +1,27 @@
+{% load staticfiles %}
+
+<html>
+<head>
+	<title>Calificación de Empresas</title>
+	<link rel="stylesheet" href="{% static 'css/empresas.css' %}">
+</head>
+
+<div id="Contenedor">
+	<div id="Cabecera" align="center">
+		<h1 class="titulo"> <strong>Valoracion de Empresas</strong></h1>
+	</div>
+	<div id="Cuerpo" align="center">
+		{% if lista_ultimas_empresas %}
+			<ul>
+			{% for empresa in lista_ultimas_empresas %}
+				<a href="/empresas/{{ empresa.id }}/"><button type="button" class="btn" />{{ empresa.nombre }}</button></a>
+			{% endfor %}
+			</ul>
+		{% else %}
+		    <p>No hay empresas.</p>
+		{% endif %}
+
+		<a href="/empresas/add_empresa/"><button type="button" class="boton" /><strong>Añadir Empresa</strong></button></a><br />
+	</div>
+</div>
+</html>

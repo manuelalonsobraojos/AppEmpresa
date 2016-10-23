@@ -1,0 +1,101 @@
+
+h2,h3,a,body,p,input{	
+	font-family:sans-serif;
+	
+}
+
+.titulo{
+
+
+
+}
+
+#tabla {
+	margin-top:20px;
+	background-color: #E6E6E6;
+	width:950px;
+	font-size:22px
+}
+
+#contenedor {
+	width:950px; 	/* Ancho */
+	height:auto; 	/* Altura variable */
+	margin:auto; /* Centrado automatico */
+}
+
+#Cabecera {
+	width:950px; 	/* Ancho */
+	height:130px; 	/* Altura variable */
+	background-color: #EB2337;
+	border-bottom: dotted 1px #da0717;
+	margin:auto;
+}
+
+#Cabecera p{
+	font-size:14px;
+	color: #EB2337;
+	margin-right:10px;
+	margin-top:40px;
+	float:right;
+}
+.Enlace{
+	color:#EB2337;
+}
+
+#Cuerpo{
+	
+	width: 950px;
+    margin: auto;
+
+}
+#pie {
+	width: 950px;
+	height:auto; 	/* Altura variable */
+    margin: auto;
+	background-color: #EB2337;
+	font-size:11px;
+	color: white;
+}
+.Titulo {
+	background-color: #EB2337;
+	text-align: center;
+	color: white;
+}
+/*Estilo para el formulario*/
+#Formulario {
+	
+	margin:0 auto;
+	margin-top:20px;
+	background-color: #E6E6E6;
+	width:250px;
+	
+}
+#botonera{
+	margin:0 auto;
+}
+label{
+	font-size:12px;
+	font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.boton{
+	width:90px;
+	height:auto;
+	background-color: #EB2337;
+	color:white;
+	margin-top:10px;
+	
+}
+.btn {
+  background: #3498db;
+
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
